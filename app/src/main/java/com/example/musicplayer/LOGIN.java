@@ -14,19 +14,18 @@ public class LOGIN extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_l_o_g_i_n);
-        button=(Button)findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        configNextButton();
+    }
+
+    private void configNextButton(){
+        Button nextbutton = (Button) findViewById(R.id.button);
+        nextbutton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                openHomePge();
+            public void onClick(View v) {
+                startActivity(new Intent(LOGIN.this , Home_Page.class));
             }
-        });
+    });
     }
-
-    private void openHomePge() {
-            Intent intent=new Intent(this,Home_Page.class);
-            startActivity(intent);
-    }
-
 
 }

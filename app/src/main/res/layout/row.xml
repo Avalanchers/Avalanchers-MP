@@ -1,50 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
 
-    android:padding="16dp"
-    >
-
-    <ImageView
-        android:id="@+id/image"
-        android:layout_width="126dp"
-        android:layout_height="148dp"
-        android:background="#090909"
-        android:src="@drawable/billeelish">
-
-
-    </ImageView>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="AM A BAD GUY"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:id="@+id/text1"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text ="Bille Ellish"
-            android:textColor="#a9a9a9"
-            android:textStyle="bold"
-            android:layout_margin="5dp"
-            android:textSize="15sp"
-            android:id="@+id/text2"
-            />
-
-
-    </LinearLayout>
-</LinearLayout>
+    android:orientation="horizontal"/>

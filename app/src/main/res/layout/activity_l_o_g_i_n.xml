@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,11 +13,10 @@
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="220dp"
-        android:paddingLeft="20dp"
         android:background="@drawable/edit_round"
-
         android:hint="Enter Your Name"
-         />
+
+        android:paddingLeft="20dp" />
 
     <EditText
         android:id="@+id/pass"
@@ -26,13 +25,12 @@
         android:layout_below="@+id/name"
         android:layout_centerHorizontal="true"
 
-        android:paddingLeft="20dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_round"
-
         android:hint="Enter Your Password"
+
         android:inputType="textPassword"
-         />
+        android:paddingLeft="20dp" />
 
     <Button
         android:id="@+id/button"
@@ -50,4 +48,4 @@
         android:textStyle="bold" />
 
 
-</RelativeLayout >
+</RelativeLayout>
