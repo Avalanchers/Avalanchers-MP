@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D218224C"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".music_player">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="8dp"
+        app:alignmentMode="alignMargins"
+        app:columnCount="1"
+        app:columnOrderPreserved="false"
+        app:rowCount="2">
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ancestral"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/songTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:text="Steven Wilson" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/songpicGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="8dp"
+        app:alignmentMode="alignMargins"
+        app:columnOrderPreserved="false"
+        app:rowCount="6">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/el8asala" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/bargrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="8dp"
+        app:alignmentMode="alignMargins"
+        app:columnCount="1"
+        app:columnOrderPreserved="false"
+        app:rowCount="2">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/buttonsgrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="8dp"
+        app:alignmentMode="alignMargins">
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>

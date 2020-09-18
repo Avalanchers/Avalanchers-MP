@@ -21,7 +21,8 @@
 
 
         android:hint="Enter Your Username"
-         />
+        />
+
 
     <EditText
         android:id="@+id/pass"
@@ -38,32 +39,34 @@
         android:drawablePadding="5dp"
         android:hint="Enter Your Password"
         android:inputType="textPassword"
-         />
-
-    <Button
-        android:id="@+id/button"
+        />
+    <EditText
+        android:id="@+id/confpass"
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_below="@+id/pass"
+        android:layout_centerHorizontal="true"
+
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_round"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/buttonk"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/confpass"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:background="@drawable/button_round"
 
         android:text="Submit"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="25dp"
-        android:textStyle="bold" />
-    <Button
-        android:id="@+id/buttonreg"
-        android:layout_width="300dp"
-        android:layout_height="40dp"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:background="@drawable/button_round"
-
-        android:text="Register"
         android:textAllCaps="false"
         android:textColor="#fff"
         android:textSize="25dp"

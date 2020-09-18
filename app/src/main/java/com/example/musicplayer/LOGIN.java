@@ -20,12 +20,25 @@ public class LOGIN extends AppCompatActivity {
             public void onClick(View view) {
                 openHomePge();
             }
+
         });
+        Button b=(Button)findViewById(R.id.buttonreg);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                RegisterPage();
+            }
+        });
+
     }
 
     private void openHomePge() {
             Intent intent=new Intent(this,Home_Page.class);
             startActivity(intent);
+    }
+    public void RegisterPage(){
+        Intent intent=new Intent(this,Register.class);
+        startActivity(intent);
     }
 
 
