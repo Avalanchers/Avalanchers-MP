@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"></activity>
+        <activity android:name=".music9"></activity>
+        <activity android:name=".music8" />
+        <activity android:name=".music7" />
+        <activity android:name=".music6" />
+        <activity android:name=".music5" />
+        <activity android:name=".music4" />
+        <activity android:name=".Register" />
         <activity
             android:name=".ui.login.Register"
             android:label="@string/title_activity_register" />

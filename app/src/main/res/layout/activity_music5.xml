@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C5349"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".activity_music_player">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="8dp"
+        app:alignmentMode="alignMargins"
+        app:columnCount="1"
+        app:columnOrderPreserved="false"
+        app:rowCount="2">
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The Greatest"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/songTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="8dp"
+            android:text="Sia" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/songpicGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="9"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="8dp"
+        app:alignmentMode="alignMargins"
+        app:columnOrderPreserved="false"
+        app:rowCount="6">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/sia" />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/bargrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="14dp"
+        android:paddingRight="14dp"
+        android:paddingBottom="8dp"
+        app:alignmentMode="alignMargins"
+        app:columnCount="1"
+        app:columnOrderPreserved="false"
+        app:rowCount="2">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/buttonsgrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        app:alignmentMode="alignMargins">
+
+        <ImageButton
+            android:id="@+id/playButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:padding="14dp"
+            android:tint="#000000"
+            app:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_baseline_play_arrow_24"
+            tools:ignore="VectorDrawableCompat" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</LinearLayout>

@@ -26,9 +26,16 @@ public class Home_Page extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player_list);
-toPlayScreen();
+        toPlayScreen();
         toPlayMusic2();
         toPlayMusic3();
+        toPlayMusic4();
+        toPlayMusic5();
+        toPlayMusic6();
+        toPlayMusic7();
+        toPlayMusic8();
+        toPlayMusic9();
+
         Button b=(Button)findViewById(R.id.logout);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,4 +77,63 @@ toPlayScreen();
         });
     }
 
+    public void toPlayMusic4(){
+        View b=findViewById(R.id.songGrid4);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home_Page.this,music4.class));
+            }
+        });
+    }
+
+    public void toPlayMusic5(){
+        View b=findViewById(R.id.songGrid5);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home_Page.this,music5.class));
+            }
+        });
+    }
+
+    public void toPlayMusic6(){
+        View b=findViewById(R.id.songGrid6);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home_Page.this,music6.class));
+            }
+        });
+    }
+
+    public void toPlayMusic7(){
+        View b=findViewById(R.id.songGrid7);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home_Page.this,music7.class));
+            }
+        });
+    }
+
+    public void toPlayMusic8(){
+        View b=findViewById(R.id.songGrid8);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home_Page.this,music8.class));
+            }
+        });
+    }
+
+    public void toPlayMusic9(){
+        View b=findViewById(R.id.songGrid9);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home_Page.this,music9.class));
+            }
+        });
+    }
 }

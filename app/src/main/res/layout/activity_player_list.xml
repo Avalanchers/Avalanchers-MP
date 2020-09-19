@@ -34,20 +34,14 @@
 
             <Button
                 android:id="@+id/logout"
-                android:layout_width="300dp"
-                android:layout_height="40dp"
-                android:layout_alignLeft="@+id/listText"
-                android:layout_centerHorizontal="true"
-
-                android:layout_marginLeft="170dp"
-                android:layout_marginTop="10dp"
-                android:background="#727E7878"
-
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:padding="15dp"
                 android:text="Log Out"
                 android:textAllCaps="false"
-                android:textColor="#fff"
-                android:textSize="25dp"
-                android:textStyle="bold" />
+                android:textColor="#C9000000"
+                android:textSize="18sp"/>
 
 
         </RelativeLayout>
@@ -80,7 +74,7 @@
                 android:layout_height="53dp"
                 android:layout_margin="10dp"
                 app:layout_gravity="start"
-                app:srcCompat="@drawable/el8asala" />
+                app:srcCompat="@drawable/ghsala" />
 
             <TextView
                 android:id="@+id/songtitle1"
@@ -90,7 +84,7 @@
                 android:foregroundGravity="left"
                 android:gravity="start"
                 android:paddingLeft="10dp"
-                android:text="My Book Of Regrets"
+                android:text="ELGhasala"
                 android:textColor="#000000"
                 app:layout_gravity="start" />
 
@@ -100,7 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
-                android:text="Album : 4 1/2"
+                android:text="WEGZ"
                 android:textColor="#C6000000"
                 app:layout_column="1"
                 app:layout_row="0" />
@@ -165,7 +159,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
-                android:text="Album : idk"
+                android:text="Avril Lavigne"
                 android:textColor="#C6000000"
                 app:layout_column="1"
                 app:layout_row="0" />
@@ -209,8 +203,10 @@
                 android:layout_width="50dp"
                 android:layout_height="53dp"
                 android:layout_margin="10dp"
+                app:layout_column="0"
                 app:layout_gravity="start"
-                app:srcCompat="@drawable/el8asala" />
+                app:layout_row="0"
+                app:srcCompat="@drawable/song4" />
 
             <TextView
                 android:id="@+id/songtitle3"
@@ -220,7 +216,7 @@
                 android:foregroundGravity="left"
                 android:gravity="start"
                 android:paddingLeft="10dp"
-                android:text="El Ghasala"
+                android:text="Sunday Rain Sets In"
                 android:textColor="#000000"
                 app:layout_gravity="start" />
 
@@ -230,7 +226,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
-                android:text="WEGZ"
+                android:text="Steven Wilson"
                 android:textColor="#C6000000"
                 app:layout_column="1"
                 app:layout_row="0" />
@@ -248,7 +244,409 @@
         </androidx.gridlayout.widget.GridLayout>
 
         <View
+            android:id="@+id/divider5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="?android:attr/listDivider"
+            android:padding="0dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/songGrid4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="8dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="3"
+            app:columnOrderPreserved="false"
+            app:rowCount="6">
+
+            <ImageView
+                android:id="@+id/song4"
+                android:layout_width="50dp"
+                android:layout_height="53dp"
+                android:layout_margin="10dp"
+                app:layout_column="0"
+                app:layout_gravity="start"
+                app:layout_row="0"
+                app:srcCompat="@drawable/godzilla" />
+
+            <TextView
+                android:id="@+id/songtitle4"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:text="Godzilla"
+                android:textColor="#000000"
+                app:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/songAlbum4"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="15dp"
+                android:text="Eminem ft.Juice World"
+                android:textColor="#C6000000"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:tint="#B3B3B3"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <View
             android:id="@+id/divider3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="?android:attr/listDivider"
+            android:padding="0dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/songGrid5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="8dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="3"
+            app:columnOrderPreserved="false"
+            app:rowCount="6">
+
+            <ImageView
+                android:id="@+id/song5"
+                android:layout_width="50dp"
+                android:layout_height="53dp"
+                android:layout_margin="10dp"
+                app:layout_column="0"
+                app:layout_gravity="start"
+                app:layout_row="0"
+                app:srcCompat="@drawable/sia" />
+
+            <TextView
+                android:id="@+id/songtitle5"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:text="The Greatest"
+                android:textColor="#000000"
+                app:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/songAlbum5"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="15dp"
+                android:text="Sia"
+                android:textColor="#C6000000"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:tint="#B3B3B3"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="?android:attr/listDivider"
+            android:padding="0dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/songGrid6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="8dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="3"
+            app:columnOrderPreserved="false"
+            app:rowCount="6">
+
+            <ImageView
+                android:id="@+id/song6"
+                android:layout_width="50dp"
+                android:layout_height="53dp"
+                android:layout_margin="10dp"
+                app:layout_column="0"
+                app:layout_gravity="start"
+                app:layout_row="0"
+                app:srcCompat="@drawable/song2" />
+
+            <TextView
+                android:id="@+id/songtitle6"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:text="The Collective (Ghost Rider Remix)"
+                android:textColor="#000000"
+                app:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/songAlbum6"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="15dp"
+                android:text="Phaxe and Morten Granau"
+                android:textColor="#C6000000"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageButton
+                android:id="@+id/imageButton6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:tint="#B3B3B3"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="?android:attr/listDivider"
+            android:padding="0dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/songGrid7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="8dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="3"
+            app:columnOrderPreserved="false"
+            app:rowCount="6">
+
+            <ImageView
+                android:id="@+id/song7"
+                android:layout_width="50dp"
+                android:layout_height="53dp"
+                android:layout_margin="10dp"
+                app:layout_column="0"
+                app:layout_gravity="start"
+                app:layout_row="0"
+                app:srcCompat="@drawable/wishyouwerehere" />
+
+            <TextView
+                android:id="@+id/songtitle7"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:text="Wish You Were Here"
+                android:textColor="#000000"
+                app:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/songAlbum7"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="15dp"
+                android:text="Pink Floyd"
+                android:textColor="#C6000000"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageButton
+                android:id="@+id/imageButton7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:tint="#B3B3B3"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="?android:attr/listDivider"
+            android:padding="0dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/songGrid8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="8dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="3"
+            app:columnOrderPreserved="false"
+            app:rowCount="6">
+
+            <ImageView
+                android:id="@+id/song8"
+                android:layout_width="50dp"
+                android:layout_height="53dp"
+                android:layout_margin="10dp"
+                app:layout_column="0"
+                app:layout_gravity="start"
+                app:layout_row="0"
+                app:srcCompat="@drawable/damnation" />
+
+            <TextView
+                android:id="@+id/songtitle8"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:text="Hope Leaves"
+                android:textColor="#000000"
+                app:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/songAlbum8"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="15dp"
+                android:text="Opeth"
+                android:textColor="#C6000000"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageButton
+                android:id="@+id/imageButton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:tint="#B3B3B3"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:background="?android:attr/listDivider"
+            android:padding="0dp" />
+
+        <androidx.gridlayout.widget.GridLayout
+            android:id="@+id/songGrid9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:paddingBottom="8dp"
+            app:alignmentMode="alignMargins"
+            app:columnCount="3"
+            app:columnOrderPreserved="false"
+            app:rowCount="6">
+
+            <ImageView
+                android:id="@+id/song9"
+                android:layout_width="50dp"
+                android:layout_height="53dp"
+                android:layout_margin="10dp"
+                app:layout_column="0"
+                app:layout_gravity="start"
+                app:layout_row="0"
+                app:srcCompat="@drawable/life" />
+
+            <TextView
+                android:id="@+id/songtitle9"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:foregroundGravity="left"
+                android:gravity="start"
+                android:paddingLeft="10dp"
+                android:text="Life And Death"
+                android:textColor="#000000"
+                app:layout_gravity="start" />
+
+            <TextView
+                android:id="@+id/songAlbum9"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:paddingLeft="15dp"
+                android:text="The Dear Hunter"
+                android:textColor="#C6000000"
+                app:layout_column="1"
+                app:layout_row="0" />
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:tint="#B3B3B3"
+                android:visibility="visible"
+                app:srcCompat="@android:drawable/ic_media_play" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+        <View
+            android:id="@+id/divider11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="0dp"
