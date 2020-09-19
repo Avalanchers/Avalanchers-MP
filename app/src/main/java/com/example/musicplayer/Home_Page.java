@@ -1,14 +1,15 @@
 package com.example.musicplayer;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+<<<<<<< HEAD
 import android.content.Context;
+=======
+>>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
+<<<<<<< HEAD
 import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -19,12 +20,16 @@ import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+=======
+import android.widget.Button;
+>>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
 
 public class Home_Page extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         setContentView(R.layout.activity_player_list);
         toPlayScreen();
         toPlayMusic2();
@@ -116,6 +121,21 @@ public class Home_Page extends AppCompatActivity {
             }
         });
     }
+=======
+        setContentView(R.layout.player_list);
+
+//        toPlayScreen();
+    }
+
+    public void toPlayScreen(){
+            Button nextbutton = (Button) findViewById(R.id.button4);
+            nextbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(Home_Page.this , music_player.class));
+            }
+        });
+>>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
 
     public void toPlayMusic8(){
         View b=findViewById(R.id.songGrid8);
@@ -127,6 +147,7 @@ public class Home_Page extends AppCompatActivity {
         });
     }
 
+<<<<<<< HEAD
     public void toPlayMusic9(){
         View b=findViewById(R.id.songGrid9);
         b.setOnClickListener(new View.OnClickListener() {
@@ -136,4 +157,8 @@ public class Home_Page extends AppCompatActivity {
             }
         });
     }
+=======
+
+
+>>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
 }

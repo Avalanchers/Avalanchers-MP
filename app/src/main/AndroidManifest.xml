@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".music9"></activity>
         <activity android:name=".music8" />
         <activity android:name=".music7" />
@@ -23,6 +24,9 @@
         <activity android:name=".music2" />
         <activity android:name=".player_list" />
         <activity android:name=".activity_music_player" />
+=======
+        <activity android:name=".music_player"></activity>
+>>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
         <activity android:name=".Home_Page" />
         <activity android:name=".LOGIN" />
         <activity android:name=".MainActivity">
