@@ -14,12 +14,11 @@ public class LOGIN extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_l_o_g_i_n);
-<<<<<<< HEAD
         button=(Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openHomePge();
+                configNextButton();
             }
 
         });
@@ -32,11 +31,7 @@ public class LOGIN extends AppCompatActivity {
         });
 
     }
-=======
->>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
 
-        configNextButton();
-    }
     public void RegisterPage(){
         Intent intent=new Intent(this,Register.class);
         startActivity(intent);
