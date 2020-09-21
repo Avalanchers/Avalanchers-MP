@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#88CACACA"
+    android:background="@drawable/picsartavril2"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".activity_music_player">
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Give Me What You Like"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
         <TextView
@@ -40,7 +40,8 @@
             android:paddingLeft="10dp"
             android:paddingTop="2dp"
             android:paddingBottom="8dp"
-            android:text="Avril Lavigne" />
+            android:text="Avril Lavigne"
+            android:textColor="#CDFFFFFF" />
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_weight="9"
+        android:background="@drawable/picsartavril2"
         android:paddingLeft="14dp"
         android:paddingTop="14dp"
         android:paddingRight="14dp"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C8BFBAB5"
+    android:background="@drawable/picsartwish2"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".activity_music_player">
@@ -56,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_weight="9"
+        android:background="@drawable/picsartwish1"
         android:paddingLeft="14dp"
         android:paddingTop="14dp"
         android:paddingRight="14dp"
@@ -69,7 +70,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/wishyouwerehere" />
+            app:srcCompat="@drawable/wishyou" />
     </androidx.gridlayout.widget.GridLayout>
 
     <androidx.gridlayout.widget.GridLayout

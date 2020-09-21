@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#771919"
+    android:background="@drawable/picsartgodzilla2"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".activity_music_player">
@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Godzilla"
-            android:textColor="#000000"
+            android:textColor="#FFFFFF"
             android:textSize="24sp" />
 
         <TextView
@@ -40,7 +40,8 @@
             android:paddingLeft="10dp"
             android:paddingTop="2dp"
             android:paddingBottom="8dp"
-            android:text="Eminem ft.Juice World" />
+            android:text="Eminem ft.Juice World"
+            android:textColor="#C1FFFFFF" />
 
     </androidx.gridlayout.widget.GridLayout>
 
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_weight="9"
+        android:background="@drawable/picsartgodzilla2"
         android:paddingLeft="14dp"
         android:paddingTop="14dp"
         android:paddingRight="14dp"
@@ -113,7 +115,7 @@
             android:layout_height="match_parent"
             android:background="#00FFFFFF"
             android:padding="14dp"
-            android:tint="#000000"
+            android:tint="#DAFFFFFF"
             app:layout_gravity="center_horizontal"
             app:srcCompat="@drawable/ic_baseline_play_arrow_24"
             tools:ignore="VectorDrawableCompat" />

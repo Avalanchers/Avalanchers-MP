@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="2"
-    android:background="#3EE6E6E6"
+    android:background="#323232"
     android:onClick="toPlayScreen"
     android:orientation="vertical"
     app:layout_columnWeight="1"
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="10"
-            android:background="#3EA6A6A6">
+            android:background="#323232">
 
             <TextView
                 android:id="@+id/listText"
@@ -29,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:padding="15dp"
                 android:text="Music List"
-                android:textColor="#C9000000"
+                android:textColor="#C9FFFFFF"
                 android:textSize="24sp" />
 
             <Button
@@ -37,11 +37,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
+                android:background="#323232"
                 android:padding="15dp"
                 android:text="Log Out"
                 android:textAllCaps="false"
-                android:textColor="#C9000000"
-                android:textSize="18sp"/>
+                android:textColor="#C9FFFFFF"
+                android:textSize="18sp" />
 
 
         </RelativeLayout>
@@ -59,6 +60,7 @@
             android:layout_width="match_parent"
             android:layout_height="97dp"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -85,7 +87,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="ELGhasala"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -95,7 +97,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="WEGZ"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 
@@ -124,6 +126,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -150,7 +153,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="Give You What You Like"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -160,7 +163,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="Avril Lavigne"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 
@@ -189,6 +192,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -217,7 +221,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="Sunday Rain Sets In"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -227,7 +231,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="Steven Wilson"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 
@@ -256,6 +260,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -284,7 +289,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="Godzilla"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -294,7 +299,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="Eminem ft.Juice World"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 
@@ -323,6 +328,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -351,7 +357,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="The Greatest"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -361,7 +367,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="Sia"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 
@@ -390,6 +396,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -418,7 +425,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="The Collective (Ghost Rider Remix)"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -428,7 +435,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="Phaxe and Morten Granau"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 
@@ -457,6 +464,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -485,7 +493,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="Wish You Were Here"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -495,7 +503,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="Pink Floyd"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 
@@ -524,6 +532,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -552,7 +561,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="Hope Leaves"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -562,7 +571,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="Opeth"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 
@@ -591,6 +600,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="8"
+            android:background="#171717"
             android:paddingLeft="14dp"
             android:paddingTop="14dp"
             android:paddingRight="14dp"
@@ -619,7 +629,7 @@
                 android:gravity="start"
                 android:paddingLeft="10dp"
                 android:text="Life And Death"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 app:layout_gravity="start" />
 
             <TextView
@@ -629,7 +639,7 @@
                 android:layout_marginTop="35dp"
                 android:paddingLeft="15dp"
                 android:text="The Dear Hunter"
-                android:textColor="#C6000000"
+                android:textColor="#C6FFFFFF"
                 app:layout_column="1"
                 app:layout_row="0" />
 

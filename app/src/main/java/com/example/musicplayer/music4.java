@@ -36,7 +36,7 @@ public class music4 extends AppCompatActivity {
         });
         handler=new Handler();
         seekBar=(SeekBar)findViewById(R.id.seekBar);
-        mediaPlayer=MediaPlayer.create(getApplicationContext(),R.raw.godzilla);
+        mediaPlayer=MediaPlayer.create(getApplicationContext(),R.raw.godzzzilla);
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
 
 

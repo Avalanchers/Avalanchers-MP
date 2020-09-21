@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#A8E2FF5F"
+    android:background="@drawable/ppghsalaback"
     android:orientation="vertical"
     android:weightSum="10"
     tools:context=".activity_music_player">
@@ -56,6 +56,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:layout_weight="9"
+        android:background="@drawable/picsartghsala"
         android:paddingLeft="14dp"
         android:paddingTop="14dp"
         android:paddingRight="14dp"
