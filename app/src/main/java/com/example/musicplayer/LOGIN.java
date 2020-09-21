@@ -10,10 +10,15 @@ import android.widget.Button;
 
 public class LOGIN extends AppCompatActivity {
     private Button button;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_l_o_g_i_n);
+
+
+
         button=(Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,5 +51,9 @@ public class LOGIN extends AppCompatActivity {
             }
     });
     }
-
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
+    }
 }

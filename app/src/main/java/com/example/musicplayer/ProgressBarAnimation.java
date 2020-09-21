@@ -17,7 +17,6 @@ public class ProgressBarAnimation extends Animation {
         this.context=context;
         this.from=from;
         this.progressbar=progressbar;
-
         this.to=to;
     }
     @Override
@@ -30,5 +29,4 @@ public class ProgressBarAnimation extends Animation {
              context.startActivity(new Intent(context,LOGIN.class));
          }
     }
-
 }
