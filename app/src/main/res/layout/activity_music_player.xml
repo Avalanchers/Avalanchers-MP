@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:background="#A8E2FF5F"
     android:orientation="vertical"
     android:weightSum="10"
@@ -50,22 +49,13 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
-=======
-    tools:context=".music_player"
-    android:orientation="vertical"
-    android:weightSum="10">
->>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/songpicGrid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:layout_margin="5dp"
         android:layout_weight="9"
-=======
-        android:layout_weight="8"
->>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
         android:paddingLeft="14dp"
         android:paddingTop="14dp"
         android:paddingRight="14dp"
@@ -78,13 +68,8 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-<<<<<<< HEAD
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/ghsala" />
-=======
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/billeelish" />
->>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
     </androidx.gridlayout.widget.GridLayout>
 
     <androidx.gridlayout.widget.GridLayout
@@ -92,11 +77,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-<<<<<<< HEAD
         android:layout_margin="5dp"
-=======
         android:layout_weight="1"
->>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
         android:paddingLeft="14dp"
         android:paddingTop="14dp"
         android:paddingRight="14dp"
@@ -118,7 +100,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-<<<<<<< HEAD
         android:layout_marginLeft="5dp"
         android:layout_marginTop="5dp"
         android:layout_marginRight="5dp"
@@ -138,13 +119,5 @@
             app:srcCompat="@drawable/ic_baseline_play_arrow_24"
             tools:ignore="VectorDrawableCompat" />
     </androidx.gridlayout.widget.GridLayout>
-=======
-        android:layout_weight="1"
-        android:paddingLeft="14dp"
-        android:paddingTop="14dp"
-        android:paddingRight="14dp"
-        android:paddingBottom="8dp"
-        app:alignmentMode="alignMargins"/>
->>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
 
 </LinearLayout>

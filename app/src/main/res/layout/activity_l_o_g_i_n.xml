@@ -12,7 +12,6 @@
         android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_centerHorizontal="true"
-<<<<<<< HEAD
         android:layout_marginTop="240dp"
         android:paddingLeft="20dp"
         android:drawableStart="@drawable/ic_baseline_account_box_24"
@@ -37,15 +36,11 @@
         android:layout_height="40dp"
         android:layout_below="@+id/name"
         android:layout_centerHorizontal="true"
-
         android:layout_marginTop="20dp"
         android:background="@drawable/edit_round"
-<<<<<<< HEAD
         android:drawableStart="@drawable/ic_baseline_lock_24"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="5dp"
-=======
->>>>>>> 9c628def3bd378543a05c7afc9be9efcbcdff693
         android:hint="Enter Your Password"
 
         android:inputType="textPassword"
