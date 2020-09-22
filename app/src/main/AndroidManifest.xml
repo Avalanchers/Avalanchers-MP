@@ -28,7 +28,7 @@
         <activity android:name=".music_player"></activity>
         <activity android:name=".Home_Page" />
         <activity android:name=".LOGIN" android:noHistory="true"/>
-        <activity android:name=".MainActivity" android:noHistory="true">
+        <activity android:name=".MainActivity" android:noHistory="true" android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -36,5 +36,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

@@ -9,24 +9,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class LOGIN extends AppCompatActivity {
-    private Button button;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_l_o_g_i_n);
 
-
-
-        button=(Button)findViewById(R.id.button);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                configNextButton();
-            }
-
-        });
         Button b=(Button)findViewById(R.id.buttonreg);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,6 +23,7 @@ public class LOGIN extends AppCompatActivity {
             }
         });
 
+    configNextButton();
     }
 
     public void RegisterPage(){
@@ -47,13 +36,18 @@ public class LOGIN extends AppCompatActivity {
         nextbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent=new Intent(LOGIN.this,LOGIN.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(new Intent(LOGIN.this , Home_Page.class));
             }
-    });
+        });
     }
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        finish();
+        Intent intent=new Intent(LOGIN.this,LOGIN.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY & Intent.FLAG_ACTIVITY_CLEAR_TOP & Intent.FLAG_ACTIVITY_NEW_TASK);
+        finishAffinity();
+        return;
     }
 }

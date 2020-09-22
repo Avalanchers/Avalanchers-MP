@@ -29,7 +29,7 @@ public class activity_music_player extends AppCompatActivity  {
         playicon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-check();
+                check();
             }
 
         });
@@ -83,7 +83,7 @@ check();
         }
     }
     @Override
-protected void onResume()
+    protected void onResume()
     {
         super.onResume();
         mediaPlayer.start();
