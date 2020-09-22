@@ -482,7 +482,7 @@
                 app:layout_column="0"
                 app:layout_gravity="start"
                 app:layout_row="0"
-                app:srcCompat="@drawable/wishyouwerehere" />
+                app:srcCompat="@drawable/wishyou" />
 
             <TextView
                 android:id="@+id/songtitle7"
