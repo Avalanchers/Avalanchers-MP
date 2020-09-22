@@ -88,6 +88,7 @@ public class music2 extends AppCompatActivity {
     {
         super.onResume();
         mediaPlayer.start();
+        playCycle();
         playicon.setImageResource(R.drawable.ic_baseline_pause_24);
 
     }
@@ -96,12 +97,14 @@ public class music2 extends AppCompatActivity {
     {
         super.onPause();
         mediaPlayer.stop();
+        playCycle();
         playicon.setImageResource(R.drawable.ic_baseline_play_arrow_24);
     }
     @Override
     public void  onDestroy()
     {
         super.onDestroy();
+        playCycle();
         mediaPlayer.release();
         handler.removeCallbacks(runnable);
     }
@@ -110,16 +113,16 @@ public class music2 extends AppCompatActivity {
         {
             flag = true;
             playicon.setImageResource(R.drawable.ic_baseline_pause_24);
+            playCycle();
             mediaPlayer.start();
-
+            playCycle();
         }
         else
         {
             flag = false;
             playicon.setImageResource(R.drawable.ic_baseline_play_arrow_24);
             mediaPlayer.pause();
-
+            playCycle();
         }
-
     }
 }

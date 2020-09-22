@@ -7,23 +7,54 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
 
 public class LOGIN extends AppCompatActivity {
+    private Button submitL;
+    private EditText UserN;
+    private EditText UserP;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_l_o_g_i_n);
 
-        Button b=(Button)findViewById(R.id.buttonreg);
-        b.setOnClickListener(new View.OnClickListener() {
+
+
+        submitL=(Button)findViewById(R.id.button);
+        UserN=(EditText)findViewById(R.id.name);
+        UserP=(EditText)findViewById(R.id.pass);
+        final AvalancheDB ExsistUser=new AvalancheDB(this);
+
+
+        submitL.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (ExsistUser.VerifyUser(UserN.getText().toString(),UserP.getText().toString()))
+                {
+                    Toast.makeText(getApplicationContext(),"Logged in successfully :)",Toast.LENGTH_LONG).show();
+                    startActivity(new Intent(LOGIN.this , Home_Page.class));
+                }
+                else{
+                    
+                    Toast.makeText(getApplicationContext(),"SomeThing went Wrong !",Toast.LENGTH_LONG).show();
+                }
+                
+
+            }
+
+        });
+
+
+        Button reg=(Button)findViewById(R.id.buttonreg);
+        reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 RegisterPage();
             }
         });
 
-    configNextButton();
     }
 
     public void RegisterPage(){
@@ -32,22 +63,16 @@ public class LOGIN extends AppCompatActivity {
     }
 
     private void configNextButton(){
-        Button nextbutton = (Button) findViewById(R.id.button);
-        nextbutton.setOnClickListener(new View.OnClickListener() {
+        submitL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(LOGIN.this,LOGIN.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(new Intent(LOGIN.this , Home_Page.class));
             }
-        });
+    });
     }
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Intent intent=new Intent(LOGIN.this,LOGIN.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY & Intent.FLAG_ACTIVITY_CLEAR_TOP & Intent.FLAG_ACTIVITY_NEW_TASK);
-        finishAffinity();
-        return;
+        finish();
     }
 }
