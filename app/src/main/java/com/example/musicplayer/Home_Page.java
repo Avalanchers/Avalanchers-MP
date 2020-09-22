@@ -45,7 +45,9 @@ public class Home_Page extends AppCompatActivity {
     }
     public void LogoutPage(){
         Intent intent=new Intent(this,LOGIN.class);
+//        intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY & Intent.FLAG_ACTIVITY_CLEAR_TOP & Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
+        finish();
     }
     public void toPlayScreen(){
         View b=findViewById(R.id.songpicGrid);
@@ -133,6 +135,24 @@ public class Home_Page extends AppCompatActivity {
                 startActivity(new Intent(Home_Page.this,music9.class));
             }
         });
+    }
+
+    private long backPressedTime;
+    private Toast backToast;
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()) {
+            backToast.cancel();
+            super.onBackPressed();
+            Intent intent=new Intent(Home_Page.this,Home_Page.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY & Intent.FLAG_ACTIVITY_CLEAR_TOP & Intent.FLAG_ACTIVITY_NEW_TASK);
+            finishAffinity();
+            return;
+        } else {
+            backToast = Toast.makeText(getBaseContext(), "Press back again to exit", Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
 
 }
